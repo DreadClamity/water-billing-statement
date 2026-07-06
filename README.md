@@ -18,7 +18,7 @@ A local water district serves thousands of residential customers every month. Cu
 - **Google Apps Script** — a `doPost` function appends each submission as a new Sheet row.
 
 ## Live Demo
-
+https://dreadclamity.github.io/water-billing-statement/
 
 ## Google Sheet Data Reciever
 https://docs.google.com/spreadsheets/d/1MEqoyyPbTKDEkS-LrqN0PDCxa4mvYqPolCU6O5ga-hw/edit?usp=sharing
