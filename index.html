@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Billing Statement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+    <header>
+        <h1>Water Billing Statement</h1>
+        <p class="author-name">Jeryl Albay - BIT31</p>
+    </header>
+
+    <section class="form-section">
+        <form id="billingForm" novalidate>
+            <div class="field">
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName" required>
+            </div>
+            
+            <div class="field">
+                <label for="waterConsumption">Water Consumption (Cubic Meter)</label>
+                <input type="number" id="waterConsumption" min="1" step="0.1" required>
+            </div>
+            
+            <div class="field">
+                <label for="customerType">Customer Type</label>
+                <select id="customerType" required>
+                    <option value="Regular">Regular</option>
+                    <option value="Senior Citizen">Senior Citizen</option>
+                    <option value="Solo Parent">Solo Parent</option>
+                </select>
+            </div>
+
+            <button type="submit" id="generateBtn">Generate Bill</button>
+        </form>
+        <p id="errorMsg" class="error hidden"></p>
+    </section>
+
+    <h3 class="transaction-counter">Transactions Processed: <span id="transactionCount">0</span></h3>
+    
+    <section id="receiptSection" class="receipt-section hidden">
+        <pre id="receiptOutput"></pre>
+    </section>
+
+    <ul id="historyList" class="hidden"></ul>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

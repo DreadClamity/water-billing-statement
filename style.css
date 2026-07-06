@@ -1,0 +1,130 @@
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1E1E1E;
+    --text-main: #E0E0E0;
+    --accent-red: #D32F2F;
+    --accent-hover: #B71C1C;
+    --border-color: #333333;
+    --receipt-bg: #E8F0FE;
+    --receipt-text: #111111;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    margin: 0;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    color: var(--accent-red);
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.author-name {
+    color: #888888;
+    font-size: 0.8rem;
+    margin: 0.4rem 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+input, select {
+    padding: 0.75rem;
+    background-color: #2A2A2A;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-red);
+}
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: var(--accent-red);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+.error {
+    color: #FF8A80;
+    background-color: rgba(211, 47, 47, 0.1);
+    padding: 0.75rem;
+    border-left: 4px solid #FF8A80;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.transaction-counter {
+    color: var(--accent-red);
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.receipt-section {
+    background-color: var(--receipt-bg);
+    color: var(--receipt-text);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+pre {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+    line-height: 1.4;
+}
+
+.hidden { display: none; }
